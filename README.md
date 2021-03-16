@@ -3,7 +3,7 @@
 > python3 -m pip install shot-on-iphone
 > python3
 ```
-```
+```python
 >>> from shot_on_iphone import Convert
 >>> Convert("krypton.mp4").Merge("out.mp4")
 """
