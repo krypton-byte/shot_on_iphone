@@ -20,8 +20,7 @@ jobs:
         python resetup.py --version="${{ github.ref }}"
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install setuptools wheel twine moviepy
+        python -m pip install --upgrade pip && pip install setuptools wheel twine moviepy
     - name: Test Video
       run: |
         python -m shot_on_iphone -i shot_on_iphone/iphone.mp4 -o res.mp4 -t 10
